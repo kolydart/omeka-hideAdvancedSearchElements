@@ -22,7 +22,7 @@ jQuery(document).ready(function($) {
   /**
    * remove last element
    */
-  $("form#advanced-search > div.advanced-search-content > div.field").last().remove();
+  // $("form#advanced-search > div.advanced-search-content > div.field").last().remove();
 
   /** filter out all values from select, except the ones we use (disabled) */
   /*

@@ -17,6 +17,12 @@ class Module extends AbstractModule
             array($this, 'advancedSearch')
         );
         
+        $sharedEventManager->attach(
+            'Omeka\Controller\Site\Item',
+            'view.advanced_search',
+            array($this, 'advancedSearch')
+        );
+        
     }
 
     public function advancedSearch(Event $event) {
